@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- In the head we have a title a link to the icon and the link to the css page-->
+    <title>IS413 Assignment1</title>
+    <link rel="icon" type="image/png" href="img/koolkaticon.png" />
+    <link href="css/Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Here there is a header with my name in it, a picture of me skiing, a paragraph, a list of
+        my top jobs to pursue, and a grade calculator for this class-->
+    <header>Wells Bunker</header>
+    <br />
+    <br />
+    <img src="img/IMG_5304.jpg" />
+    <br />
+    <br />
+    <p>I am really excited to be in IS413 this semester. I think coding is really fun and I love to have a finished product that works when I am done!
+    I hope to really understand MVC framework and ASP.NET Core by the end of this semester.</p>
+    <h2>My top jobs to purse:</h2>
+    <ul class="list">
+        <li>Zip Line Tour Guide</li>
+        <li>River Raft Guide</li>
+        <li>NBA Player</li>
+        <li>If everything else fails, Developer</li>
+    </ul >
+    <br />
+    <br />
+    <h3>Grade Calculator for IS413</h3>
+    <!-- This is the form for the grade calculator-->
+    <form>
+        <fieldset>
+            <legend>Enter your percent out of 100 in each category</legend>
+            <label for="assignments">Assignments: </label>
+            <input type="number" id="assignments" min="0" max="100" />
+            <br />
+            <label for="groupproj">Group Project: </label>
+            <input type="number" id="groupproj" min="0" max="100" />
+            <br />
+            <label for="quizzes">Quizzes: </label>
+            <input type="number" id="quizzes" min="0" max="100" />
+            <br />
+            <label for="exams">Exams: </label>
+            <input type="number" id="exams" min="0" max="100" />
+            <br />
+            <label for="intex">Intex: </label>
+            <input type="number" id="intex" min="0" max="100" />
+            <br />
+            <br />
+            <input type="submit" id="submit" value="Submit" />
+        </fieldset>
+    </form>
+    
+    <!-- This is the link to the javascript page that handles the grade calculator-->
+    <script src="js/JavaScript.js"></script>
+
+</body>
+</html>

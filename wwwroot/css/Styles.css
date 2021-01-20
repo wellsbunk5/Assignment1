@@ -1,0 +1,37 @@
+﻿/* This is the style page for the website. */
+body {
+    background-color:#d9e1e6;
+    text-align:center;
+}
+p{
+    width:300px;
+    display:inline-block;
+}
+img{
+    text-align:center;
+    width:500px;
+    height:300px;
+}
+/* This creates the header across the top of the screen. */
+header{
+    width:100%;
+    height:40px;
+    background-color:#000;
+    text-align:center;
+    color:white;
+    font-size:20px;
+    vertical-align:central;
+}
+ul.list li{
+    list-style-type:square;
+    width:300px;
+    margin:auto;
+}
+label{
+    width:100px;
+}
+/* This makes the fieldset be centered and not go the entire way across the page */
+fieldset{
+    width:500px;
+    margin:auto;
+}
