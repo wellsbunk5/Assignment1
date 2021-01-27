@@ -7,14 +7,13 @@
     <link href="~/css/Styles.css" rel="stylesheet" />
 </head>
 <body>
-    <!-- Here there is a header with my name in it, a picture of me skiing, a paragraph, a list of
-        my top jobs to pursue, and a grade calculator for this class-->
+    <!-- This is the Dynamic layout. All pages will have this code. It has a head, header with a dynamic h1 tag, menu, and script-->
     <header>
         <h1>@ViewBag.header</h1>
         <menu>
             <ul>
-                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                <li><a asp-controller="Home" asp-action="GradeCalculator">Grade Calculator</a></li>
+                <li class="nobullet"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class="nobullet"><a asp-controller="Home" asp-action="GradeCalculator">Grade Calculator</a></li>
             </ul>
         </menu>
     </header>

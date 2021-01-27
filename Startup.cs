@@ -23,6 +23,7 @@ namespace Assignment1
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // if in development mode, show me the error page
             if (env.IsEnvironment("Development"))
             {
                 app.UseDeveloperExceptionPage();
@@ -32,12 +33,14 @@ namespace Assignment1
                 // Build error page to show
             }
 
+            
             app.UseNodeModules();
             app.UseStaticFiles();
-
+            // added these so that it will route to the Home controller
             app.UseRouting();
             app.UseEndpoints(cfg =>
             {
+                // The default is the Home controller and the Index action
                 cfg.MapControllerRoute("Default", "{controller}/{action}/{id?}",
                     new { controller = "Home", action = "Index" });
             }

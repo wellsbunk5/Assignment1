@@ -1,4 +1,4 @@
-﻿// declare and assign a variable for the submit button
+﻿// when you click on the submit button do this function
 $("#submit").click(function () {
     // declare and assign values from the form
     var assignments = $("#assignments").val();
