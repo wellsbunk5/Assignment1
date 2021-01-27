@@ -11,10 +11,12 @@
         my top jobs to pursue, and a grade calculator for this class-->
     <header>
         <h1>@ViewBag.header</h1>
-        <ul>
-            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-            <li><a asp-controller="Home" asp-action="GradeCalculator">Grade Calculator</a></li>
-        </ul>
+        <menu>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="GradeCalculator">Grade Calculator</a></li>
+            </ul>
+        </menu>
     </header>
   
     @RenderBody()
