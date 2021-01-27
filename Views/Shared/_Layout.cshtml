@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- In the head we have a title a link to the icon and the link to the css page-->
+    <title>IS413 Assignment2</title>
+    <link rel="icon" type="image/png" href="~/img/koolkaticon.png" />
+    <link href="~/css/Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Here there is a header with my name in it, a picture of me skiing, a paragraph, a list of
+        my top jobs to pursue, and a grade calculator for this class-->
+    <header>
+        <h1>@ViewBag.header</h1>
+        <ul>
+            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li><a asp-controller="Home" asp-action="GradeCalculator">Grade Calculator</a></li>
+        </ul>
+    </header>
+  
+    @RenderBody()
+
+    <!-- This is the link to the javascript page that handles the grade calculator-->
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/JavaScript.js"></script>
+
+</body>
+</html>

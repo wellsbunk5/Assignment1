@@ -1,15 +1,11 @@
 ﻿// declare and assign a variable for the submit button
-var submit;
-submit = document.getElementById("submit");
-
-// when submit button is clicked do this function
-submit.addEventListener("click", function () {
+$("#submit").click(function () {
     // declare and assign values from the form
-    var assignments = document.getElementById("assignments").value;
-    var quizzes = document.getElementById("quizzes").value;
-    var groupproj = document.getElementById("groupproj").value;
-    var exams = document.getElementById("exams").value;
-    var intex = document.getElementById("intex").value;
+    var assignments = $("#assignments").val();
+    var quizzes = $("#quizzes").val();
+    var groupproj = $("#groupproj").val();
+    var exams = $("#exams").val();
+    var intex = $("#intex").val();
 
     var finalpercent;
     var lettergrade;
@@ -56,5 +52,5 @@ submit.addEventListener("click", function () {
     }
 
     // alert the letter grade and the final percent
-    alert("Letter Grade: " + lettergrade +", Percent: " + finalpercent)
+    alert("Letter Grade: " + lettergrade + ", Percent: " + finalpercent);
 });
